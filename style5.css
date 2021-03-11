@@ -1,0 +1,195 @@
+body {
+    background-color: black;
+    height: 500px;
+    width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#figure {
+    position: absolute;
+    width: 450px;
+    top: 50px;
+    left: -500px;
+    animation-name: fly1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes fly1 {
+    from { transform:translateX(0)}
+    to { transform:translateX(300px)
+    }
+}
+
+#figure:hover~#warning {
+    display: block;
+}
+
+#warning {
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 250px;
+    left: 15px;
+    top: 350px;
+    text-align: center;
+    color: rgb(129, 198, 255);
+    font-size: 20px;
+}
+
+
+
+h1 {
+    position:absolute;
+    font-size: 80px;
+    color:white;
+    left: 300px;
+    top: 0px;
+    animation: glow1 1s  infinite ease-in-out alternate;
+}
+
+@keyframes glow1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #51aaf3, 0 0 60px #51aaf3,;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #166cce, 0 0 50px #166cce, 0 0 70px #166cce;
+    }
+  }
+
+#emotions {
+    position: absolute;
+    left: 400px;
+    top: 230px;
+    font-size: 20px;
+    color: white;
+    
+
+}
+
+#mul {
+    position: absolute;
+    left: 540px;
+    top: 235px;
+    font-size: 15px;
+    width: 365px;
+    height: 150px;
+    background-color: rgb(227, 239, 255);
+    border-style: none;
+    color: rgb(0, 30, 87);
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+}
+
+#mul:hover {
+    background-color: rgb(163, 214, 255);
+}
+
+#type {
+    position: absolute;
+    left: 400px;
+    top: 310px;
+    font-size: 20px;
+    color: white;
+}
+
+#text {
+    position: absolute;
+    left: 370px;
+    top: 350px;
+    width:500px;
+    height:300px;
+    font-size: 10px;
+    text-align: center;
+    background-color: rgb(227, 239, 255);
+    border-radius: 5%;
+    border-style: none;
+    margin-left: 30px;
+    font-size: 10px;
+    text-overflow: clip;
+    transition: background-color 0.5s ease-out;
+}
+
+#text:hover {
+    background-color: rgb(163, 214, 255);
+}
+
+#emoji {
+    position: absolute;
+    top:200px;
+    left: 1450px;
+    width:350px;
+    animation-name: fly2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly2 {
+    from { transform:translateX(0)}
+    to { transform:translateX(-400px)
+    }
+}
+
+#return {
+    position: absolute;
+    left: 1050px;
+    top: 635px;
+    width:80px;
+    height:20px;
+    font-size: 15px;
+    text-align: center;
+    background-color:rgb(163, 214, 255) ;
+    border-radius: 10%;
+    border-style: none;
+    margin-left: 30px;
+    transition: background-color 0.5s ease-out;
+    color:#0d3999;
+    font-weight: bolder;
+}
+
+#return:hover {
+    background-color: rgb(227, 239, 255);
+}
+
+#arrow {
+    position:absolute;
+    width:40px;
+    left:200px;
+    top:-40px;
+    animation-name: fly;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly {
+    from { transform:translateY(0)}
+    to { transform:translateY(200px)
+    }
+}
+
+#out {
+    position: absolute;
+    left: 1150px;
+    top: 635px;
+    width:80px;
+    height:20px;
+    font-size: 15px;
+    text-align: center;
+    background-color:rgb(163, 214, 255) ;
+    border-radius: 10%;
+    border-style: none;
+    margin-left: 30px;
+    transition: background-color 0.5s ease-out;
+    color:#0d3999;
+    font-weight: bolder;
+}
+
+#out:hover {
+    background-color: rgb(227, 239, 255);
+}

@@ -1,0 +1,237 @@
+body {
+    background-color: black;
+    height: 500px;
+	width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#figure上 {
+    position: absolute;
+    width:200px;
+    left: 600px;
+    top: -250px;
+    cursor: pointer;
+    animation-name: fly1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly1 {
+    from { transform:translateY(0)}
+    to { transform:translateY(500px)
+    }
+}
+
+#figure左 {
+    position: absolute;
+    width:120px;
+    left: 480px;
+    top:-250px;
+    animation-name: fly2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fly2 {
+    from { transform:translateY(0)}
+    to { transform:translateY(580px)
+    }
+}
+
+#figure右 {
+    position: absolute;
+    width:120px;
+    left: 800px;
+    top:-250px;
+    animation-name: fly3;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly3 {
+    from { transform:translateY(0)}
+    to { transform:translateY(580px)
+    }
+}
+
+#figure下 {
+    position: absolute;
+    width:200px;
+    left: 600px;
+    top: -250px;
+    z-index: +1;
+    display: block;
+    cursor: pointer;
+    animation-name: fly4;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly4 {
+    from { transform:translateY(0)}
+    to { transform:translateY(650px)
+    }
+}
+
+#glow2 {
+    position: absolute;
+    width: 180px;
+    height: 100px;
+    border-radius: 50%;
+    fill: white;
+    animation: glow2 1s  infinite ease-in-out alternate;
+    left:610px;
+    top:530px;
+    z-index: 0;
+}
+
+@keyframes glow2 {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 90px #ffeb77, 0 0 150px #ffeb77;
+    }
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 40px #104cce, 0 0 90px #104cce, 0 0 150px #104cce;
+    }
+  }
+
+h1 {
+    position:absolute;
+    font-size: 80px;
+    color:white;
+    left: 370px;
+    top: 0px;
+    animation: glow1 1s  infinite ease-in-out alternate;
+}
+
+@keyframes glow1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #51aaf3, 0 0 60px #51aaf3,;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #166cce, 0 0 50px #166cce, 0 0 70px #166cce;
+    }
+  }
+
+#figure上:hover~#text {
+    display: block;
+}
+
+#text {
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 250px;
+    left: 500px;
+    top: 70px;
+    text-align: center;
+    color: rgb(129, 198, 255);
+    font-size: 12px;
+    z-index: +2;
+    border-radius: 10%;
+    padding: 100px;
+}
+
+#negative {
+    color:white
+}
+
+#positive {
+    color:white
+}
+
+#gif1 {
+    position:absolute;
+    width:40px;
+    left:-35px;
+    top:250px;
+    animation-name: fly5;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes fly5 {
+    from { transform:translateX(0)}
+    to { transform:translateX(635px)}
+}
+
+#gif2 {
+    position:absolute;
+    width:40px;
+    left:1400px;
+    top:250px;
+    animation-name: fly6;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly6 {
+    from { transform:translateX(0)}
+    to { transform:translateX(-645px)
+    }
+}
+
+#figure下:hover~#welcome {
+    display: block;
+}
+
+#welcome {
+    position: absolute;
+    display: none;
+    color: #0d3999;
+    left:663px;
+    top: 510px;
+    z-index: +2;
+    font-size: 20px;
+    text-align: center;
+}
+
+#return {
+    position: absolute;
+    left: 1050px;
+    top: 635px;
+    width:80px;
+    height:20px;
+    font-size: 15px;
+    text-align: center;
+    background-color:rgb(163, 214, 255) ;
+    border-radius: 10%;
+    border-style: none;
+    margin-left: 30px;
+    transition: background-color 0.5s ease-out;
+    color:#0d3999;
+    font-weight: bolder;
+}
+
+#return:hover {
+    background-color: rgb(227, 239, 255);
+}
+
+#out {
+    position: absolute;
+    left: 1150px;
+    top: 635px;
+    width:80px;
+    height:20px;
+    font-size: 15px;
+    text-align: center;
+    background-color:rgb(163, 214, 255) ;
+    border-radius: 10%;
+    border-style: none;
+    margin-left: 30px;
+    transition: background-color 0.5s ease-out;
+    color:#0d3999;
+    font-weight: bolder;
+}
+
+#out:hover {
+    background-color: rgb(227, 239, 255);
+}
+

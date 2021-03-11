@@ -1,0 +1,221 @@
+body {
+    background-color: black;
+    height: 500px;
+	width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#parent {
+    position: fixed;
+    width: 900px;
+    height: 900px;
+    background-color:white;
+    left: 280px;
+    top: 100px;
+    border-radius: 50%;
+    animation: glow 1s  infinite ease-in-out alternate;
+}
+
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ffeb77, 0 0 50px #ffeb77;
+    }
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 30px #104cce, 0 0 50px #104cce, 0 0 100px #104cce;
+    }
+  }
+
+#child {
+    position: absolute;
+    color: rgb(0, 83, 161);
+    top: 200px;
+    left: 140px;
+    font-size: 20px;
+    text-align: center;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    line-height: 40px;
+
+}
+
+@keyframes appear {
+    from {opacity: 0%}
+    to {opacity: 100%}
+}
+
+#agree {
+    font-size: 15px;
+
+}
+
+#check {
+    cursor: pointer;
+}
+
+#Do {
+    font-size: 30px;
+    top: 0px;
+}
+
+
+#choice {
+    padding: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+
+
+#enter:hover {
+    background-color: rgb(129, 198, 255);
+}
+
+#intention {
+    font-size: 20px;
+}
+
+#mul {
+    font-size: 10px;
+    width: 320px;
+    background-color: rgb(227, 239, 255);
+    border-style: none;
+    color: rgb(0, 30, 87);
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#name {
+    font-size: 20px;
+}
+
+#na {
+    width:315px;
+    height:20px;
+    font-size: 10px;
+    text-align: center;
+    background-color: rgb(227, 239, 255);
+    border-radius: 5%;
+    border-style: none;
+    margin-left: 30px;
+
+}
+
+#figure1 {
+    position: fixed;
+    width: 250px;
+    left: 400px;
+    z-index: -1;
+    transform: rotate(-20deg);
+    top: 220px;
+    animation-name: fly1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly1 {
+    from { transform:translateY(0)}
+    to { transform:translateY(-200px)
+    }
+}
+
+#figure2 {
+    position: fixed;
+    width: 400px;
+    left: 350px;
+    z-index: -2;
+    transform: rotate(-40deg);
+    top: 200px;
+    animation-name: fly2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly2 {
+    from { transform:translateX(0)}
+    to { transform:translateX(-300px)
+    }
+}
+
+#figure3 {
+    position: fixed;
+    width: 200px;
+    left: 800px;
+    z-index: -1;
+    top: 225px;
+    transform: rotate(20deg);
+    animation-name: fly3;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly3 {
+    from { transform:translateY(0)}
+    to { transform:translateY(-200px)
+    }
+}
+
+#figure4 {
+    position: fixed;
+    width: 450px;
+    top: 100px;
+    left: 750px;
+    z-index: -1;
+    transform: rotate(35deg);
+    animation-name: fly4;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fly4 {
+    from { transform:translateX(0)}
+    to { transform:translateX(250px)
+    }
+}
+
+
+#enter {
+    position:absolute;
+    cursor: pointer;
+    width:250px;
+    height:30px;
+    background-color: rgb(227, 239, 255);
+    border-radius: 8%;
+    transition: background-color 0.5s ease-in;
+    border-style: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    top:270px;
+    left: 170px;
+    color: rgb(0, 30, 87);
+    font-weight: bolder;
+}
+
+#return {
+    position: absolute;
+    left: 950px;
+    top: 630px;
+    width:80px;
+    height:20px;
+    font-size: 15px;
+    text-align: center;
+    background-color:rgb(163, 214, 255) ;
+    border-radius: 10%;
+    border-style: none;
+    margin-left: 30px;
+    transition: background-color 0.5s ease-out;
+    color:#0d3999;
+    font-weight: bolder;
+}
+
+#return:hover {
+    background-color: rgb(227, 239, 255);
+}
